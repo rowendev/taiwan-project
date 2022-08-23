@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+
+header{
+    background-color: #c4c4c4;
+    padding: 1rem;
+    h1,h3{
+        font-weight: normal;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    
+}
+nav{
+    background-color: #312f2f;
+    padding: 0.75rem;
+    ul{
+        list-style-type: none;
+        display: flex;
+        li{
+            a{
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 1rem;
+                text-decoration: none;
+                margin: 0.75rem;
+                
+                transition: all 0.5s;
+            }
+            a:hover{
+                color: white;
+            }
+            .active{
+                color: white;
+            }
+        }
+    }
+    
+}
+section.container{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    section.left{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 0rem 2rem;
+        img{
+            
+            width: 300px;
+            height: 300px;
+            border-radius: 15%;
+            
+        }
+    }
+    section.right{
+        padding-left: 3rem;
+        padding-right: 5rem;
+        h3{
+            text-decoration: none;
+        }
+        .content {
+            padding: 1.5rem 0rem;
+        }
+        ul{
+            font-size: 15px;
+        }
+        a {
+            color: black;
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+        a:hover {
+            color: rgb(117, 117, 117);
+        }
+    }
+}
+
+#myBtn {
+    height: 40px;
+    width: 40px;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    // padding: 16px;
+    border-radius: 10%;
+    
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width:576px) {
+    section.container{
+        padding-top: 15px;
+        
+        display: flex;
+        flex-direction: column;
+        section.left{
+            img{
+                
+                justify-content: center;
+                align-items: center;
+                padding-left: 15px;
+                width: 300px;
+                height: 300px;
+                border-radius: 30%;
+                align-content: center;
+            }
+        }
+        section.right{
+            padding-left: 15px;
+            padding-right: 15px;
+            h3{
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於作者</title>
+    <meta name="description" content="此網站介紹台灣過去70年的經濟發展與相關政策">
+    
+    <link rel="stylesheet" href="./twicon.css">
+    <!-- 網頁logo -->
+    <link rel="shortcut icon" href="../src/taiwanIcon.png">
+    <link rel="bookmark" href="../src/taiwanIcon.png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0a58e80414.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/fifth.css">
+</head>
+<body>
+    <header>
+        <h1 class="headerTitle">台灣經濟發展歷史</h1>
+        <h3 class="headerText">過去70年台灣經濟發展的歷史以及相關政策</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html"><i class="twicon-main-island"></i> 首頁</a></li>
+            <li><a href="./second.html">農業發展</a></li>
+            <li><a href="./third.html">工業改革</a></li>
+            <li><a href="./fourth.html">經濟起飛</a></li>
+            <li><a class="active" href="./fifth.html">關於作者</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <section class="left">
+            <img src="../src/pexels-zhu-yi-7492308.jpg" alt="作者照片">
+        </section>
+
+        <section class="right">
+            <h3>中文簡介</h3>
+            <hr>
+            <div class="content">
+                <p>
+                嗨! 我是林楚翔 Rowen, 今年畢業於國立臺北科技大學 電子工程系, 熱愛軟體開發, 目前正在努力學習網頁前端與後端的各種技術.
+                </p>
+            </div>
+            <!-- <h3>English Essay</h3>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate excepturi dolorem quia. Delectus voluptatem consequuntur dolorum ipsam asperiores odit id?
+            </p> -->
+            <h3>技能</h3>
+            <hr>
+            <div class="content">
+                <h5>前端</h5>
+                <br>
+                <ul>
+                    <li>HTML/CSS(SCSS)</li>
+                    <li>JavaScript</li>
+                    <li>EJS</li>
+                    <li>ReactJS</li>
+                    <li>Bootstrap5</li>
+                </ul>
+                <br>
+                <h5>後端</h5>
+                <br>
+                <ul>
+                    <li>Python Flask</li>
+                    <li>NodeJS(Express.js)</li>
+                </ul>
+                <br>
+                <h5>資料庫</h5>
+                <br>
+                <ul>
+                    <li>MongoDB(Mongoose)</li>
+                    <li>MySQL(PopSQL)</li>
+                </ul>
+            </div>
+            
+            <h3>Contact me</h3>
+            <hr>
+            <a href="mailto: rowendevtw@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/rowendev" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </section>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+}
+    </script>
+</body>
+</html>
