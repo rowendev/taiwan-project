@@ -1,2 +1,2 @@
 # taiwan-project
-static web
+static web building with pure HTML / CSS / JavaScript
